@@ -1,2 +1,34 @@
 <!DOCTYPE html>
-<html></html>
+<html><!DOCTYPE html>
+<html>
+<!-- Include standard head partial -->
+<%- include('./partials/head') -%>
+
+<body>
+<!-- Including menu -->
+ <%- include('./partials/menu') -%>
+
+ <h1> Sample form results </h1>
+ <!-- Taking ln and fn parameters from res.render in formentry post -->
+ <p> Name: <%= ln %>, <%= fn %> </p>
+ <p> Email: <%= em %> </p>
+ <p> Total: <%= total %> </p>
+ 
+
+<input type="checkbox" name="numconvert" id="numconvert" value="bin">
+<label for="numconvert">show in binary </label>
+<input type="checkbox" name="numconvert2" id="numconvert2" value="hex"
+<label for="numconvert2">show in hexadecimal </label>
+
+
+ <input type="submit"value="submit form">
+
+
+</form>
+
+
+
+
+</body>
+
+</html>
