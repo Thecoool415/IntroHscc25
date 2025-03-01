@@ -1,5 +1,8 @@
 {
   "dependencies": {
-    "express": "^4.21.2"
+    "cookie": "^1.0.2",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.21.2",
+    "parser": "^0.1.4"
   }
 }
