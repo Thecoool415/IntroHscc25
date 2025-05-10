@@ -13,7 +13,7 @@ module.exports = {
                 Authorization: `Bearer  ${Token}`
             }
         }; //End Setting our options
-        return new Promise((resolve, reject) => 
+        return new Promise((resolve, reject) => {
             const req = https.get(url, options, (res) => {
                 let data = '';
                 res.on('data', (chunk) => {
@@ -28,8 +28,8 @@ module.exports = {
             });
 
             req.end();
-        }
-          }); //End Promise
+        });
+          //End Promise
 
           
        } //end getwithbearerToken function
